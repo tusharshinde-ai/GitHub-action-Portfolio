@@ -22,7 +22,6 @@ jobs:
             - name: Setup Github Pages
               uses: actions/configure-pages@v4
               with:
-                token: ***
                 enablement: false
             # Static Code Artifacts 
             - name: Upload static files
