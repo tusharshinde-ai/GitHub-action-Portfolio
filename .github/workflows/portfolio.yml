@@ -18,11 +18,12 @@ jobs:
             # clone or check out the code where this workflow is written.
             - name: Checkout code
               uses: actions/checkout@v4
-
             # Setup GitHub Pages
             - name: Setup Github Pages
               uses: actions/configure-pages@v4
-
+              with:
+                    token: ***
+                    enablement: false
             # Static Code Artifacts 
             - name: Upload static files
               uses: actions/upload-pages-artifact@v4
