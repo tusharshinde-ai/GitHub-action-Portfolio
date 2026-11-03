@@ -20,6 +20,7 @@ jobs:
               uses: actions/checkout@v4
             # Setup GitHub Pages
             - name: Setup Github Pages
+              id: deployments
               uses: actions/configure-pages@v4
             # Static Code Artifacts 
             - name: Upload static files
